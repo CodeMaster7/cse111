@@ -47,23 +47,24 @@ def main():
 # This function will call the other functions to create a sentence
 def make_sentence(quantity, tense):
     """Build and return a sentence with the following structure:
-    determiner noun verb prepositional_phrase.
+    determiner noun verb prepositional_phrase prepositional_phrase.
 
     Parameters:
         quantity: an integer that determines if the determiner
             and noun are singular or plural
         tense: a string that determines the verb tense
             ("past", "present", or "future")
-    Return: a sentence with a determiner, noun, verb, and prepositional phrase
+    Return: a sentence with a determiner, noun, verb, and two prepositional phrases
     """
     determiner = get_determiner(quantity)
     noun = get_noun(quantity)
     verb = get_verb(quantity, tense)
-    # Get a prepositional phrase to add to the sentence
-    prepositional_phrase = get_prepositional_phrase()
+    # Get two prepositional phrases to add to the sentence
+    prepositional_phrase1 = get_prepositional_phrase()
+    prepositional_phrase2 = get_prepositional_phrase()
 
     # Create the sentence and capitalize the first letter
-    sentence = f"{determiner} {noun} {verb} {prepositional_phrase}."
+    sentence = f"{determiner} {noun} {verb} {prepositional_phrase1} {prepositional_phrase2}."
     sentence = sentence.capitalize()
 
     return sentence
