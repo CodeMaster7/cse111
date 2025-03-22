@@ -24,7 +24,7 @@ h is the height of the water column in meters
 formula for calculating the pressure loss from pipe friction.
 P = -fLρv^2 / 2000d
 P is the lost pressure in kilopascals
-f is the pipe’s friction factor
+f is the pipe's friction factor
 L is the length of the pipe in meters
 ρ is the density of water 998.2 (kilogram / meter3) *Just use # in your calculations
 v is the velocity of the water flowing through the pipe in meters / second
@@ -72,10 +72,7 @@ def pressure_loss_from_pipe(pipe_diameter, pipe_length, friction_factor, water_v
 
     Return: the pressure loss from pipe friction in kilopascals
     """
-    # Check if pipe_diameter is zero to avoid division by zero error
-    if pipe_diameter == 0 or pipe_length == 0 or friction_factor == 0 or water_velocity == 0:
-        return 0.0
 
     # Calculate pressure loss using the formula: P = -fLρv^2 / 2000d
-    pressure = -friction_factor * pipe_length * 998.2 * water_velocity ** 2 / (2000 * pipe_diameter)
+    pressure = -friction_factor * pipe_length * 998.2 * math.pow(water_velocity, 2) / (2000 * pipe_diameter)
     return pressure
