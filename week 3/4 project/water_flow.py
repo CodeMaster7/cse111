@@ -1,12 +1,15 @@
 """
 Author: Sam Bonfanti
 
-Purpose: This program calculates the water flow rate in a pipe.
+Purpose: This program calculates the water flow rate in a pipe and exceeds the requirements by adding constants for the water density, earth acceleration of gravity, and water dynamic viscosity.
 
-Problem: Write a Python program that could help an engineer design a water distribution system. During this prove milestone, you will write 7 program functions and 6 test functions as described in the Steps section below.
+Problem: Write a Python program that could help an engineer design a water distribution system. During this prove milestone, you will write 7 program functions and 6 test functions as described in the Steps section below. 
 
 Core Requirements:
 1. all 6 functions test cases passed
+
+Exceeding the Requirements:
+1. Added constants for the water density, earth acceleration of gravity, and water dynamic viscosity.
 
 your program must include at least these 3 functions:
 main
