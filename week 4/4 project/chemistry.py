@@ -5,6 +5,8 @@ Purpose: The calculator computes the molar mass of the molecule and the number o
 
 Problem: During this milestone, you will complete part of the calculator by writing a function named make_periodic_table and the main function. The make_periodic_table function must create and return a compound list that contains data for all 94 naturally occuring elements.
 
+Exceeding the Requirements: I added a dictionary of known molecules with their names. I also added a function that gets the name of the chemical formula.
+
 your program must include at least these 2 functions:
 main
 make_periodic_table
